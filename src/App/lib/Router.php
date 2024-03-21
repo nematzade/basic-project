@@ -55,7 +55,7 @@ class Router
                 }
             }
         }
-        throw new Exception('Route not found');
+        throw new Exception('400! Invalid url');
     }
 
     private function normalizePath(string $path):string {

@@ -2,10 +2,10 @@
 
 namespace App\Controller;
 
-class HomeController
+class HomeController extends Controller
 {
     public function index($id)
     {
-        echo "Welcome to home! $id";die;
+        echo $this->twig->render('index.twig.php', ['id' => $id]);
     }
 }
